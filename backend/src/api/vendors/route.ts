@@ -16,8 +16,8 @@ export const PostVendorCreateSchema = z.object({
     email: z.string(),
     first_name: z.string().optional(),
     last_name: z.string().optional()
-  }).strict()
-}).strict()
+  })
+})
 
 type RequestBody = z.infer<typeof PostVendorCreateSchema>
 

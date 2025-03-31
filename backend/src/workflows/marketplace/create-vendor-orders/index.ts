@@ -15,7 +15,12 @@ type WorkflowInput = {
   cart_id: string
 }
 
-const createVendorOrdersWorkflow = createWorkflow(
+type WorkflowOutput = {
+  parent_order: any;
+  vendor_orders: any[];
+}
+
+const createVendorOrdersWorkflow = createWorkflow<WorkflowInput, WorkflowOutput, any[]>(
   "create-vendor-order",
   (input: WorkflowInput) => {
     const { data: carts } = useQueryGraphStep({
