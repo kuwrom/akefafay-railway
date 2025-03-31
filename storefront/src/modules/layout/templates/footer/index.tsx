@@ -145,7 +145,7 @@ export default async function Footer() {
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
           <Text className="txt-compact-small">
-            © {new Date().getFullYear()} Akefafay Store. All rights reserved.
+            © {new Date().getFullYear()} Akefafay PLC. All rights reserved.
           </Text>
           <MedusaCTA />
         </div>
